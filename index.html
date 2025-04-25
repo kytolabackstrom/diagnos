@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagnos: Okänd</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="game">
+      <div id="start-screen">
+        <h1>Diagnos: Okänd</h1>
+        <button id="start-button">Starta Spel</button>
+      </div>
+
+      <div id="case-screen" class="hidden">
+        <div id="score"></div>
+        <div id="case-text"></div>
+        <div id="options">
+          <button id="ask-question">Ställ kompletterande fråga (-3p)</button>
+          <button id="order-test">Beställ test (-7p)</button>
+          <button id="make-diagnosis">Ställ diagnos</button>
+        </div>
+        <div id="extra-choices" class="hidden"></div>
+      </div>
+
+      <div id="diagnosis-screen" class="hidden">
+        <h2>Välj diagnos</h2>
+        <div id="diagnosis-options"></div>
+      </div>
+
+      <div id="result-screen" class="hidden">
+        <h2 id="result-title"></h2>
+        <p id="result-text"></p>
+        <button id="next-button">Nästa Fall</button>
+      </div>
+
+      <div id="final-screen" class="hidden">
+        <h2>Spelet är slut!</h2>
+        <p id="final-score"></p>
+        <button id="restart-button">Spela igen</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
